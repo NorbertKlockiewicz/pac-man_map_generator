@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="main.js"></script>
+    <script src="leftside.js"></script>
+    <script src="rightside.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="body">
+        <div id="main">
+            <div id="left">
+                <p id="header">ITEMS:</p>
+
+            </div>
+
+            <div id="right"></div>
+
+
+        </div>
+        <div id="auto">
+            <label>
+                <p>Automat: ( )</p><input type="checkbox" name="automat" id="automat">
+            </label>
+        </div>
+
+        <input type="file" id="input" accept="text/javascript" onchange="right.LoadFromFile()">
+
+
+    </div>
+    <div id="menu">
+        <div class="option" id="undo" onclick="right.Undo()">Undo &emsp; &emsp; &emsp; &emsp; &nbsp; &nbsp; CTRL+Z</div>
+        <div class="option" id="redo" onclick="right.Redo()">Redo &emsp; &emsp; &emsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;
+            CTRL+Y</div>
+        <div class="option" id="cut" onclick="right.Cut()">Cut &nbsp; &nbsp; &emsp; &emsp; &emsp; &nbsp; &nbsp;
+            &nbsp;
+            &nbsp;CTRL+X
+        </div>
+        <div class="option" id="copy" onclick="right.Copy()">Copy &emsp; &emsp; &emsp; &emsp; &nbsp; &nbsp; CTRL+C</div>
+        <div class="option" id="paste" onclick="right.Paste()">Paste &emsp; &emsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;
+            CTRL+V
+        </div>
+        <div class="option" id="delete" onclick="right.Delete()">Delete &emsp; &emsp; &emsp; &emsp; &nbsp; &nbsp; DEL
+        </div>
+        <div class="option" id="save" onclick="right.Savetofile()">Sava to file &emsp; &emsp; &nbsp; CTRL+S</div>
+        <div class="option" id="load" onclick="document.getElementById('input').click()">Load from file &emsp;
+            &nbsp;
+            CTRL+L
+        </div>
+
+    </div>
+    <div id="temporarypaste"></div>
+    <div id="mysterydiv"></div>
+    <div id="mysterydivbottom"></div>
+</body>
+
+</html>

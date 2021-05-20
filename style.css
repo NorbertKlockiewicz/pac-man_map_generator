@@ -1,0 +1,132 @@
+body {
+    background: black;
+    font-family: 'Righteous',sans-serif;
+    width:2000px;
+    height:2000px;
+}
+p
+{
+   font-size:30px;
+}
+#automat
+{
+
+    position: absolute;
+    top:40px;
+    left:142.5px;
+    cursor:pointer;
+
+}
+#header
+{
+    position: absolute;
+    color:white;
+    left:240px;
+    font-size:30px;
+}
+#left
+{
+    width: 300px;
+}
+#right {
+   
+    width: 1500px;
+    height:1500px;
+    background:black;
+    position: absolute;
+    left:620px;
+
+}
+
+canvas {
+    border: 1px dashed #001aff;
+    cursor:pointer;
+}
+
+canvas:hover {
+    filter: brightness(50%);
+    border: 1px dotted #ffea00
+}
+
+.add {
+    background: black;
+    border: 1px dotted #001aff;
+    margin: 2px;
+}
+
+.clicked {
+    background: black;
+    border: 1px dotted#ffea00;
+    margin: 2px;
+}
+#mark
+{
+    position:absolute;
+    background-color: #3480eb;
+    opacity:0.4;
+    z-index: 5;
+}
+#menu
+{
+    background-color:white;
+    width:200px;
+    height:207px;
+    z-index:3;
+    position:absolute;
+    display:none;
+}
+.option
+{
+    
+    height:25px;
+    border-bottom:1px dotted black;
+    cursor:pointer;
+}
+.option:hover
+{
+    background-color:#3480eb;
+    color:white;
+}
+#auto
+{
+  
+    color:white;
+    position:absolute;
+    left:1100px;
+}
+#input
+{
+    display:none;
+}
+#temporarypaste
+{
+    position:absolute;
+}
+.paste
+{
+    border:1px solid red;
+}
+#temporarypaste
+{
+    pointer-events: none;
+}
+#mysterydiv
+{
+    background: black;
+    position: absolute;
+    top:82px;
+    width:1600px;
+    height:1350px;
+    left:1981px;
+    overflow: hidden;
+}
+#mysterydivbottom
+{
+    background: black;
+    position: absolute;
+    top:1402px;
+    width:2700px;
+    height:1600px;
+    left:600px;
+    overflow: hidden;
+}
